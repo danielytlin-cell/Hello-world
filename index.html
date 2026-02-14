@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>井字遊戲：玩家 vs 電腦</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>井字遊戲</h1>
+      <p class="subtitle">你是 X，電腦是 O</p>
+
+      <div id="status" class="status" aria-live="polite">輪到你下棋</div>
+
+      <section class="board" id="board" aria-label="井字棋盤">
+        <button class="cell" data-index="0" aria-label="格子 1"></button>
+        <button class="cell" data-index="1" aria-label="格子 2"></button>
+        <button class="cell" data-index="2" aria-label="格子 3"></button>
+        <button class="cell" data-index="3" aria-label="格子 4"></button>
+        <button class="cell" data-index="4" aria-label="格子 5"></button>
+        <button class="cell" data-index="5" aria-label="格子 6"></button>
+        <button class="cell" data-index="6" aria-label="格子 7"></button>
+        <button class="cell" data-index="7" aria-label="格子 8"></button>
+        <button class="cell" data-index="8" aria-label="格子 9"></button>
+      </section>
+
+      <div class="controls">
+        <button id="restart">重新開始</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
